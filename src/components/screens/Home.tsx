@@ -1,5 +1,5 @@
-import { Text, Button, View } from "react-native";
-import Page from "../molecules/Page";
+import { Button, View } from 'react-native';
+import Page from '../molecules/Page';
 
 const Home: React.FC = () => {
   return (

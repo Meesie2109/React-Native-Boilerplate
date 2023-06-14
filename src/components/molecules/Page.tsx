@@ -1,8 +1,16 @@
-import type { PropsWithChildren } from "react";
-import { StyleSheet } from "react-native";
-import { StatusBar, SafeAreaView } from "react-native";
+import type { PropsWithChildren } from 'react';
+import { StyleSheet, StatusBar, SafeAreaView } from 'react-native';
 
 type Props = PropsWithChildren & {};
+
+const styles = StyleSheet.create({
+  page: {
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'flex-start',
+    minHeight: '100%',
+  },
+});
 
 const Page: React.FC<Props> = ({ children }) => {
   return (
@@ -12,14 +20,5 @@ const Page: React.FC<Props> = ({ children }) => {
     </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({
-  page: {
-    flex: 1,
-    flexDirection: "column",
-    justifyContent: "flex-start",
-    minHeight: "100%",
-  },
-});
 
 export default Page;
