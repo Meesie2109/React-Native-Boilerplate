@@ -5,7 +5,7 @@ const Home: React.FC = () => {
   return (
     <Page>
       <View>
-        <Button title="Go to About" onPress={() => {}} />
+        <Button title="I do nothig" onPress={() => {}} />
       </View>
     </Page>
   );
